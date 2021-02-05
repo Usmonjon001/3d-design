@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Mouse over</title>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Box 1 -->
+        <div class="box">
+            <h2 class="name">Product Name</h2>
+            <a href="" class="buy">Buy Now</a>
+            <div class="circle"></div>
+            <img src="./images/2791491.svg" alt="product" class="product" height="250px">
+
+        </div>
+
+        <!-- Box 2 -->
+        <div class="box">
+            <h2 class="name">Product Name</h2>
+            <a href="" class="buy">Buy Now</a>
+            <div class="circle"></div>
+            <img src="./images/2.svg" alt="product" class="product" height="250px">
+
+        </div>
+
+
+        <!-- Box 3 -->
+        <div class="box">
+            <h2 class="name">Product Name</h2>
+            <a href="" class="buy">Buy Now</a>
+            <div class="circle"></div>
+            <img src="./images/3.svg" alt="product" class="product"  height="250px">
+
+        </div>
+    </div>
+
+    <script src="./vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+		    max: 25,
+		    speed: 400
+	});
+    </script>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
